@@ -5,42 +5,40 @@ import fotograf from "./assets/images/pp-web-site.jpg";
 
 function App() {
   return (
-    <div className="flex flex-col h-screen bg-gray-50 font-mono">
+    <div className="flex flex-col min-h-screen bg-gray-50 font-mono">
       {/* Header Section */}
-      <header className="flex-grow bg-gray-200 flex items-center justify-center p-6">
-        <div className="bg-white p-8 rounded-lg shadow-lg max-w-3xl w-full">
+      <header className="flex-grow bg-gray-200 flex items-center justify-center p-4">
+        <div className="bg-white p-6 rounded-lg shadow-lg max-w-3xl w-full">
           {/* Header */}
-          <div className="flex items-center mb-6 justify-between">
-            <div className="mx-16">
+          <div className="flex flex-col md:flex-row items-center mb-6 justify-between">
+            <div className="mb-4 md:mb-0 md:mx-16">
               <img
                 src={fotograf}
                 alt=""
-                className="w-64  h-48 rounded-full mr-6 shadow-lg"
+                className="w-32 h-32 md:w-48 md:h-48 rounded-full shadow-lg"
               />
             </div>
-            <div className="mr-32">
-              <div>
-                <p className="text-4xl font-bold text-gray-800">
-                  Mehmet Ali Yazıcı
-                </p>
-                <p className="text-xl text-gray-600 ">
-                  Cloud - DevOps Engineer{" "}
-                </p>
-                <p className="text-sm text-gray-500">Türkiye, Ankara</p>
-              </div>
+            <div className="text-center md:text-left md:mr-32">
+              <p className="text-3xl md:text-4xl font-bold text-gray-800">
+                Mehmet Ali Yazıcı
+              </p>
+              <p className="text-lg md:text-xl text-gray-600">
+                Cloud - DevOps Engineer
+              </p>
+              <p className="text-sm text-gray-500">Türkiye, Ankara</p>
             </div>
           </div>
-          <div className=" p-6 rounded-lg bg-white shadow-2xl mb-8 ">
-            {/* Hakkımda kısmı */}
+          <div className="p-4 md:p-6 rounded-lg bg-white shadow-2xl mb-8">
+            {/* About Me */}
             <div className="bg-gray-100 p-4 rounded-lg shadow-md">
-              <div className="flex gap-2">
-                <div className="w-[20px] my-1">
+              <div className="flex gap-2 items-center mb-4">
+                <div className="w-[20px]">
                   <svg
                     aria-hidden="true"
                     focusable="false"
                     data-prefix="fas"
                     data-icon="user-tie"
-                    className="svg-inline--fa fa-user-tie "
+                    className="svg-inline--fa fa-user-tie"
                     role="img"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 448 512"
@@ -51,14 +49,11 @@ function App() {
                     ></path>
                   </svg>
                 </div>
-
-                <div>
-                  <h2 className="text-2xl font-semibold mb-4 text-black ">
-                    About Me
-                  </h2>
-                </div>
+                <h2 className="text-xl md:text-2xl font-semibold text-black">
+                  About Me
+                </h2>
               </div>
-              <p className="text-lg text-gray-700 mb-6">
+              <p className="text-base md:text-lg text-gray-700 mb-4 md:mb-6">
                 I am a 4th-year Computer Engineering student at Karadeniz
                 Technical University, where I have developed a deep
                 understanding of fundamental algorithms and coding skills. My
@@ -69,7 +64,7 @@ function App() {
                 participating in a specialized bootcamp to further enhance my
                 skills.
               </p>
-              <p className="text-lg text-gray-700 mb-6">
+              <p className="text-base md:text-lg text-gray-700 mb-4 md:mb-6">
                 I am passionate about learning, open to new ideas, and committed
                 to continuous self-improvement. My goal is to stay at the
                 forefront of technological advancements and apply my knowledge
@@ -78,14 +73,14 @@ function App() {
             </div>
             {/* İş Deneyimi */}
             <div className="bg-gray-100 p-4 rounded-lg shadow-md mt-10">
-              <div className="flex gap-1 ">
-                <div className="w-[25px] my-1">
+              <div className="flex gap-2 items-center mb-4">
+                <div className="w-[25px]">
                   <svg
                     aria-hidden="true"
                     focusable="false"
                     data-prefix="fas"
                     data-icon="graduation-cap"
-                    className="svg-inline--fa fa-graduation-cap "
+                    className="svg-inline--fa fa-graduation-cap"
                     role="img"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 640 512"
@@ -96,26 +91,26 @@ function App() {
                     ></path>
                   </svg>
                 </div>
-                <div>
-                  <h3 className="text-2xl font-semibold mb-4 text-black">
-                    Experience
-                  </h3>
-                </div>
+                <h3 className="text-xl md:text-2xl font-semibold text-black">
+                  Experience
+                </h3>
               </div>
-              <p className="text-xl font-semibold text-black- mb-2">BK Mobil</p>
-              <p>Devops Intern</p>
-              <p>2024 August</p>
+              <p className="text-base md:text-xl font-semibold text-black mb-1">
+                BK Mobil
+              </p>
+              <p className="text-sm md:text-base">Devops Intern</p>
+              <p className="text-sm md:text-base">2024 August</p>
             </div>
             {/* Eğitim bilgileri */}
             <div className="bg-gray-100 p-4 rounded-lg shadow-md mt-10">
-              <div className="flex gap-1">
-                <div className="w-[20px] my-1">
+              <div className="flex gap-2 items-center mb-4">
+                <div className="w-[20px]">
                   <svg
                     aria-hidden="true"
                     focusable="false"
                     data-prefix="fas"
                     data-icon="archive"
-                    className="svg-inline--fa fa-archive "
+                    className="svg-inline--fa fa-archive"
                     role="img"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 512 512"
@@ -126,43 +121,47 @@ function App() {
                     ></path>
                   </svg>
                 </div>
-                <div>
-                  <h3 className="text-2xl font-semibold mb-4 text-black">
-                    Education
-                  </h3>
-                </div>
+                <h3 className="text-xl md:text-2xl font-semibold text-black">
+                  Education
+                </h3>
               </div>
               <div>
-                <p className="text-xl font-semibold text-black- mb-2">
+                <p className="text-base md:text-xl font-semibold text-black mb-1">
                   Karadeniz Technical University
                 </p>
-                <p className="text-lg text-gray-700 mb-1">Bachelor's Degree</p>
-                <p className="text-lg text-gray-700 mb-1">
+                <p className="text-sm md:text-lg text-gray-700 mb-1">
+                  Bachelor's Degree
+                </p>
+                <p className="text-sm md:text-lg text-gray-700 mb-1">
                   Computer Engineering
                 </p>
-                <p className="text-lg text-gray-700 mb-1">2020 - 2025</p>
+                <p className="text-sm md:text-lg text-gray-700 mb-1">
+                  2020 - 2025
+                </p>
                 <div>
-                  <p className="text-xl font-semibold text-black- mt-4">
+                  <p className="text-base md:text-xl font-semibold text-black mt-4">
                     Clarusway
                   </p>
-                  <p className="text-lg text-gray-700 mb-1">
+                  <p className="text-sm md:text-lg text-gray-700 mb-1">
                     AWS-DevOps BootCamp
                   </p>
-                  <p className="text-lg text-gray-700 mb-1">2023-2024</p>
+                  <p className="text-sm md:text-lg text-gray-700 mb-1">
+                    2023-2024
+                  </p>
                 </div>
               </div>
             </div>
           </div>
 
           <div className="bg-white p-6 rounded-lg shadow-2xl mb-8">
-            <div className="flex gap-2">
+            <div className="flex gap-2 items-center mb-4">
               <div className="w-[20px] my-2">
                 <svg
                   aria-hidden="true"
                   focusable="false"
                   data-prefix="fas"
                   data-icon="tasks"
-                  className="svg-inline--fa fa-tasks "
+                  className="svg-inline--fa fa-tasks"
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
@@ -173,24 +172,22 @@ function App() {
                   ></path>
                 </svg>
               </div>
-              <div>
-                <h2 className="text-2xl font-semibold mb-4 text-black">
-                  Portfolio
-                </h2>
-              </div>
+              <h2 className="text-xl md:text-2xl font-semibold text-black">
+                Portfolio
+              </h2>
             </div>
             <div className="grid grid-cols-1 gap-6">
               <div className="bg-gray-100 p-4 rounded-lg shadow-md">
-                <h3 className="text-xl font-semibold mb-2">
+                <h3 className="text-lg md:text-xl font-semibold mb-2">
                   AWS Capstone Project
                 </h3>
-                <p className="text-lg mb-4">
+                <p className="text-base md:text-lg mb-4">
                   I am working on deploying a web application built with the
                   Django Framework on AWS Cloud Infrastructure. This project
                   involves configuring various AWS services to ensure
                   scalability, security, and high availability of the
                   application. Detailed documentation and the source code are
-                  available on my GitHub repository.{" "}
+                  available on my GitHub repository.
                 </p>
                 <a
                   href="https://github.com/proje"
@@ -202,8 +199,10 @@ function App() {
                 </a>
               </div>
               <div className="bg-gray-100 p-4 rounded-lg shadow-md">
-                <h3 className="text-xl font-semibold mb-2">Proje 2</h3>
-                <p className="text-lg mb-4">porje 2 açıklama</p>
+                <h3 className="text-lg md:text-xl font-semibold mb-2">
+                  Proje 2
+                </h3>
+                <p className="text-base md:text-lg mb-4">Proje 2 açıklama</p>
                 <a
                   href="https://github.com/githublink"
                   target="_blank"
@@ -214,78 +213,49 @@ function App() {
                 </a>
               </div>
               <div className="bg-gray-100 p-4 rounded-lg shadow-md">
-                <h3 className="text-xl font-semibold mb-2">Skills</h3>
-                <div className="flex gap-2">
-                  <div>
-                    <button className="bg-gray-600 text-white rounded-lg px-2">
-                      Linux
-                    </button>
-                  </div>
-
-                  <div>
-                    <button className="bg-gray-600 text-white rounded-lg px-2">
-                      Python
-                    </button>
-                  </div>
-                  <div>
-                    <button className="bg-gray-600 text-white rounded-lg px-2">
-                      Terraform
-                    </button>
-                  </div>
-
-                  <div>
-                    <button className="bg-gray-600 text-white rounded-lg px-2">
-                      Docker
-                    </button>
-                  </div>
-                  <div>
-                    <button className="bg-gray-600 text-white rounded-lg px-2">
-                      SQL
-                    </button>
-                  </div>
-                  <div>
-                    <button className="bg-gray-600 text-white rounded-lg px-2">
-                      Kubernetes
-                    </button>
-                  </div>
-
-                  <div>
-                    <button className="bg-gray-600 text-white rounded-lg px-2">
-                      CI/CD
-                    </button>
-                  </div>
-                  <div>
-                    <button className="bg-gray-600 text-white rounded-lg px-2">
-                      Git
-                    </button>
-                  </div>
-                </div>
-                <div className="mt-2 gap-2 flex gap-2">
-                  <div>
-                    <button className="bg-gray-600 text-white rounded-lg px-2">
-                      AWS
-                    </button>
-                  </div>
-                  <div>
-                    <button className="bg-gray-600 text-white rounded-lg px-2">
-                      Jenkins
-                    </button>
-                  </div>
-                  <div>
-                    <button className="bg-gray-600 text-white rounded-lg px-2">
-                      GitHub Actions
-                    </button>
-                  </div>
-                  <div>
-                    <button className="bg-gray-600 text-white rounded-lg px-2">
-                      BitBucket Pipelines
-                    </button>
-                  </div>
-                  <div>
-                    <button className="bg-gray-600 text-white rounded-lg px-2">
-                      SDLC
-                    </button>
-                  </div>
+                <h3 className="text-lg md:text-xl font-semibold mb-2">
+                  Skills
+                </h3>
+                <div className="flex flex-wrap justify-center gap-2 my-2">
+                  <button className="bg-gray-600 text-white rounded-lg px-4 py-2">
+                    Linux
+                  </button>
+                  <button className="bg-gray-600 text-white rounded-lg px-4 py-2">
+                    Python
+                  </button>
+                  <button className="bg-gray-600 text-white rounded-lg px-4 py-2">
+                    Terraform
+                  </button>
+                  <button className="bg-gray-600 text-white rounded-lg px-4 py-2">
+                    Docker
+                  </button>
+                  <button className="bg-gray-600 text-white rounded-lg px-4 py-2">
+                    SQL
+                  </button>
+                  <button className="bg-gray-600 text-white rounded-lg px-4 py-2">
+                    Kubernetes
+                  </button>
+                  <button className="bg-gray-600 text-white rounded-lg px-4 py-2">
+                    CI/CD
+                  </button>
+                  <button className="bg-gray-600 text-white rounded-lg px-4 py-2">
+                    Git
+                  </button>
+                  <button className="bg-gray-600 text-white rounded-lg px-4 py-2">
+                    AWS
+                  </button>
+                  <button className="bg-gray-600 text-white rounded-lg px-4 py-2">
+                    Jenkins
+                  </button>
+                  <button className="bg-gray-600 text-white rounded-lg px-4 py-2">
+                    GitHub Actions
+                  </button>
+                  <button className="bg-gray-600 text-white rounded-lg px-4 py-2">
+                    BitBucket Pipelines
+                  </button>
+                  <button className="bg-gray-600 text-white rounded-lg px-4 py-2">
+                    SDLC
+                  </button>
                 </div>
               </div>
             </div>
@@ -294,7 +264,7 @@ function App() {
       </header>
 
       <footer className="bg-gray-500 p-6 text-center">
-        <div className="flex flex-col md:flex-row gap-6 justify-center items-center ">
+        <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
           <div className="mb-2">
             <a
               href="https://github.com/MehmetAliYZC"
