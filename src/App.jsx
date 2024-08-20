@@ -15,7 +15,7 @@ function App() {
               <img
                 src={fotograf}
                 alt=""
-                className="w-48 h-48 rounded-full mr-6 shadow-lg"
+                className="w-64  h-48 rounded-full mr-6 shadow-lg"
               />
             </div>
             <div className="mr-32">
@@ -40,7 +40,7 @@ function App() {
                     focusable="false"
                     data-prefix="fas"
                     data-icon="user-tie"
-                    class="svg-inline--fa fa-user-tie "
+                    className="svg-inline--fa fa-user-tie "
                     role="img"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 448 512"
@@ -85,7 +85,7 @@ function App() {
                     focusable="false"
                     data-prefix="fas"
                     data-icon="graduation-cap"
-                    class="svg-inline--fa fa-graduation-cap "
+                    className="svg-inline--fa fa-graduation-cap "
                     role="img"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 640 512"
@@ -115,7 +115,7 @@ function App() {
                     focusable="false"
                     data-prefix="fas"
                     data-icon="archive"
-                    class="svg-inline--fa fa-archive "
+                    className="svg-inline--fa fa-archive "
                     role="img"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 512 512"
@@ -162,7 +162,7 @@ function App() {
                   focusable="false"
                   data-prefix="fas"
                   data-icon="tasks"
-                  class="svg-inline--fa fa-tasks "
+                  className="svg-inline--fa fa-tasks "
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
@@ -316,7 +316,7 @@ function App() {
           </div>
           <div className="mb-2">
             <a
-              href="iam@mehmetaliyazici.com"
+              href="mailto:iam@mehmetaliyazici.com"
               className="text-black hover:text-blue-800 transition duration-300"
             >
               iam@mehmetaliyazici.com
